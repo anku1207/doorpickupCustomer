@@ -16,6 +16,8 @@ public class Base_Activity extends AppCompatActivity {
 
         Log.w("onCreate","onCreate");
 
+        //manoj
+
     }
 
     @Override
