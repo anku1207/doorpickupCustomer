@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data >
+        <variable
+            name="ratemodel"
+            type="com.uav.doorpickup.rateList.model.RateListModel" />
+
+        <variable
+            name="itemClickListener"
+            type="com.uav.doorpickup.interfaces.CustomClickListener" />
+
+    </data>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+       >
+    <android.support.v7.widget.CardView
+        style="@style/inputcardview"
+        android:onClick="@{(v) -> itemClickListener.CustomClick(v,ratemodel)}"
+        android:foreground="?android:selectableItemBackground"
+
+
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:image_url="@{ratemodel.forwarderLogo}"
+                        android:layout_gravity="right"
+                        android:scaleType="fitCenter"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@{ratemodel.lastmile.name}"
+                    android:gravity="center|left"
+                    android:fontFamily="@font/poppinsbold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+               >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Service"
+                    android:gravity="center|right"
+                    android:fontFamily="@font/poppinsmedium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:text=":"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@={ratemodel.serviceType.name}"
+                    android:id="@+id/forwardername"
+                    android:fontFamily="@font/poppinsmedium"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Amount (Rs.)"
+                    android:gravity="center|right"
+                    android:fontFamily="@font/poppinsmedium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:text=":"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text='@={ratemodel.amount +""}'
+                      android:fontFamily="@font/poppinsmedium"
+                      android:textColor="#2962FF"
+                      />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Delivery"
+                    android:gravity="center|right"
+                    android:fontFamily="@font/poppinsmedium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:text=":"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text='@={ratemodel.tat}'
+                    android:fontFamily="@font/poppinsmedium"
+                 />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            />
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>

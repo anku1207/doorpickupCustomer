@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DoorPickup</string>
+
+    <string name="AccountNumerDigits">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"</string>
+    <string name="PanNumberDigits">"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"</string>
+    <string name="NumberDigits">"0123456789"</string>
+
+    <string name="NameDigits">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "</string>
+
+</resources>

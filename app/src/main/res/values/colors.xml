@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#689f38</color>
+    <color name="colorPrimaryDark">#558A28</color>
+    <color name="colorAccent">#689f38</color>
+
+
+    <color name="white">#fffeff</color>
+
+    <color name="errorColor">#ffffff</color>
+    <color name="grey">#B7464545</color>
+
+    <color name="red">#D50000</color>
+
+
+    <!-- Rounded view Colors -->
+
+    <color name="uav_roundedViewBorderColor">#cccccc</color>
+    <color name="uav_roundedViewBGColor">#FFFFFF</color>
+    <color name="rscolor">#283593</color>
+
+    <color name="mrp_textViewTextColor">#2E2E2E</color>
+    <color name="mrp_textViewBackgroundColor">#FFFFFF</color>
+
+
+
+
+
+</resources>

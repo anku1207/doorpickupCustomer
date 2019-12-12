@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="inputcardview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">7dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_margin">10dp</item>
+       <!-- <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>-->
+
+    </style>
+    <style name="inputedittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@drawable/edittext_bottom_line</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:privateImeOptions">nm</item>
+    </style>
+
+
+
+
+    <style name="inputIcons">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">#a6d3d3d3</item>
+    </style>
+
+    <style name="inputRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+
+    </style>
+
+    <style name="inputRowTextViewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:tint">#afd3d3d3</item>
+
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+    <!--confirmation dialog-->
+    <style name="confirmation_dialog_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+
+    </style>
+    <style name="confirmation_dialog_filed">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+    </style>
+    <style name="confirmation_dialog_value">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+
+    </style>
+
+
+
+    <style name="confirmation_dialog_text_flied">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppinssemibold</item>
+        <item name="fontFamily">@font/poppinssemibold</item>
+    </style>
+
+
+
+
+
+
+    <style name="TextViewMrp" parent="android:Widget.TextView">
+        <item name="android:background">@color/mrp_textViewBackgroundColor</item>
+        <item name="android:textColor">@color/mrp_textViewTextColor</item>
+        <item name="android:textSize">@dimen/mrp_textView_textSize_normal</item>
+        <item name="android:paddingLeft">@dimen/mrp_textView_padding_left</item>
+        <item name="android:paddingRight">@dimen/mrp_textView_padding_left</item>
+        <item name="android:paddingTop">@dimen/mrp_textView_padding_top</item>
+        <item name="android:paddingBottom">@dimen/mrp_textView_padding_top</item>
+    </style>
+
+
+
+</resources>
